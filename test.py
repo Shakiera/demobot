@@ -16,4 +16,4 @@ def greet_person():
     return f'hi {name}!'
 
 if __name__ == '__main__':
-    app.run()
+    app.run('/greet', methods=['GET', 'POST'])
