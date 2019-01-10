@@ -6,12 +6,6 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello, World!'
 
-if __name__ == '__main__':
-    app.run()
-
-
-app = Flask(__name__)
-
 @app.route('/')
 def another_word():
     return 'tggggggggggdwhey'
@@ -21,4 +15,5 @@ def greet_person():
     name = request.values.get('text')
     return f'hi {name}!'
 
-app.run()
+if __name__ == '__main__':
+    app.run()
